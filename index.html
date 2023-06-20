@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="subscribe-card">
+        <div class="card-text">
+          <div class="card-text__info">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="card-text__info--list">
+              <div class="card-text__info--list-item">
+                <img src="./assets/images/icon-list.svg" alt="" srcset="" />
+                <p>Product discovery and building what matters</p>
+              </div>
+              <div class="card-text__info--list-item">
+                <img src="./assets/images/icon-list.svg" alt="" srcset="" />
+                <p>Measuring to ensure updates are a success</p>
+              </div>
+              <div class="card-text__info--list-item">
+                <img src="./assets/images/icon-list.svg" alt="" srcset="" />
+                <p>And much more!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-text__email">
+            <div class="flex-just-between">
+              <p>Email address</p>
+              <p class="error-txt hidden">Valid email required</p>
+            </div>
+            <input
+              type="email"
+              name="emailInput"
+              placeholder="email@company.com"
+              id="emailInput"
+              class="input"
+            />
+            <button class="subscribe-btn" id="sub-btn">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </div>
+        <div class="card-img">
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+      <div class="modal--succes_mgs hidden">
+        <div class="modal-text">
+          <img
+            src="./assets/images/icon-success.svg"
+            alt="success-icon"
+            srcset=""
+          />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <span class="userEmail"></span>. Please
+            open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <button id="btn-dismiss" class="subscribe-btn">Dismiss message</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lukas Bajla</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
